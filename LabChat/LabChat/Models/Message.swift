@@ -70,7 +70,7 @@ struct Message: MessageType {
   init?(document: QueryDocumentSnapshot) {
     let data = document.data()
     
-    guard let sentDate = data["created"] as? Date else {
+    guard let sentDate = data["created"] as? Timestamp else {
       return nil
     }
     guard let senderID = data["senderID"] as? String else {
@@ -82,7 +82,7 @@ struct Message: MessageType {
     
     id = document.documentID
     
-    self.sentDate = sentDate
+    self.sentDate = sentDate.dateValue()
     sender = Sender(id: senderID, displayName: senderName)
     
     if let content = data["content"] as? String {

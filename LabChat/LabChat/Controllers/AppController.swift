@@ -60,6 +60,12 @@ final class AppController {
     
     FirebaseApp.configure()
     
+    //To ensure app does not break in future release of firestore 5.8.0
+    let db = Firestore.firestore()
+    let settings = db.settings
+    settings.areTimestampsInSnapshotsEnabled = true
+    db.settings = settings
+    
     self.window = window
     window.tintColor = .primary
     window.backgroundColor = .white
