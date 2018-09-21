@@ -296,7 +296,7 @@ extension ChatViewController: MessagesDataSource {
     return Sender(id: user.uid, displayName: AppSettings.displayName)
   }
   
-  func numberOfMessages(in messagesCollectionView: MessagesCollectionView) -> Int {
+  func numberOfSections(in messagesCollectionView: MessagesCollectionView) -> Int {
     return messages.count
   }
   
