@@ -58,6 +58,5 @@ extension UIImage {
 extension UIImage: MediaItem {
     public var url: URL? { return nil }
     public var image: UIImage? { return self }
-    public var placeholderImage: UIImage { return self }
-    public var size: CGSize { return  CGSize.zero }
+    public var placeholderImage: UIImage { return self } 
 }
