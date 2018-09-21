@@ -27,6 +27,7 @@
 /// THE SOFTWARE.
 
 import UIKit
+import MessageKit
 
 extension UIImage {
   
@@ -51,4 +52,12 @@ extension UIImage {
     return UIGraphicsGetImageFromCurrentImageContext()
   }
   
+}
+
+//Added to make compile MessageKit 1.0.0
+extension UIImage: MediaItem {
+    public var url: URL? { return nil }
+    public var image: UIImage? { return self }
+    public var placeholderImage: UIImage { return self }
+    public var size: CGSize { return  CGSize.zero }
 }

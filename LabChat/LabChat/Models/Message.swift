@@ -37,7 +37,7 @@ struct Message: MessageType {
   let sentDate: Date
   let sender: Sender
   
-  var data: MessageData {
+  var kind: MessageKind {
     if let image = image {
       return .photo(image)
     } else {
