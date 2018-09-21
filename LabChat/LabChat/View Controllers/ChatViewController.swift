@@ -193,14 +193,14 @@ final class ChatViewController: MessagesViewController {
     }
   }
   
-  private func uploadImage(_ image: UIImage, to channel: Channel, completion: @escaping (URL?) -> Void) {
+    private func uploadImage(_ image: UIImage, to channel: Channel, completion: @escaping (URL?, Error? ) -> Void) {
     guard let channelID = channel.id else {
-      completion(nil)
+      completion(nil, nil)
       return
     }
     
     guard let scaledImage = image.scaledToSafeUploadSize, let data = scaledImage.jpegData(compressionQuality: 0.4) else {
-      completion(nil)
+      completion(nil, nil)
       return
     }
     
@@ -209,14 +209,14 @@ final class ChatViewController: MessagesViewController {
     
     let imageName = [UUID().uuidString, String(Date().timeIntervalSince1970)].joined()
     storage.child(channelID).child(imageName).putData(data, metadata: metadata) { meta, error in
-      completion(meta?.downloadURL())
+        self.storage.child(channelID).child(imageName).downloadURL(completion: completion)
     }
   }
 
   private func sendPhoto(_ image: UIImage) {
     isSendingPhoto = true
     
-    uploadImage(image, to: channel) { [weak self] url in
+    uploadImage(image, to: channel) { [weak self] (url, error) in
       guard let `self` = self else {
         return
       }
