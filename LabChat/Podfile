@@ -3,7 +3,12 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'LabChat' do
-    
+    #For Reactive Programming
+ pod 'RxSwift'
+ pod 'RxCocoa'
+ #pod 'RxSwiftExt'
+ #pod 'RxDataSources'
+ #pod 'RxGestures'
     
     #For chat functionalities
   pod 'MessageKit'

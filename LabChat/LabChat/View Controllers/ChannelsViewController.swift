@@ -162,7 +162,7 @@ class ChannelsViewController: UITableViewController {
     
     // MARK: - Helpers
     
-    //TODO: Comment
+    //TODO: Configure (bind elements e didSelects) table view
     private func configureTableViewWithRXSwift() {
         
     }
