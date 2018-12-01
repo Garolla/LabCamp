@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CjQ-1Q-T8u">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exercise0 PageVC-->
+        <scene sceneID="Qu8-oJ-Ksu">
+            <objects>
+                <viewController id="CjQ-1Q-T8u" customClass="Exercise0PageVC" customModule="LabCamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iuC-IG-gwA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uj-y8-iNK">
+                                <rect key="frame" x="16" y="44" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BehaviorRelay has not yet been modified" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXR-QA-qPM">
+                                <rect key="frame" x="16" y="264.5" width="343" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tc1-54-T0F">
+                                <rect key="frame" x="16" y="328.5" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="g6L-7z-i4n"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWG-YP-YMe">
+                                <rect key="frame" x="26" y="599" width="333" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fKP-Ii-K3R"/>
+                                </constraints>
+                                <state key="normal" title="Push me to pass!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sWG-YP-YMe" firstAttribute="leading" secondItem="EQk-ms-h2h" secondAttribute="leading" constant="26" id="9pW-Hy-MpA"/>
+                            <constraint firstItem="EQk-ms-h2h" firstAttribute="trailing" secondItem="sWG-YP-YMe" secondAttribute="trailing" constant="16" id="G7T-El-MCa"/>
+                            <constraint firstItem="EQk-ms-h2h" firstAttribute="trailing" secondItem="4Uj-y8-iNK" secondAttribute="trailing" constant="16" id="Ivr-VO-LuW"/>
+                            <constraint firstItem="tc1-54-T0F" firstAttribute="centerY" secondItem="EQk-ms-h2h" secondAttribute="centerY" id="MKH-7N-qT1"/>
+                            <constraint firstItem="EXR-QA-qPM" firstAttribute="leading" secondItem="EQk-ms-h2h" secondAttribute="leading" constant="16" id="Ooa-3O-oW6"/>
+                            <constraint firstItem="4Uj-y8-iNK" firstAttribute="leading" secondItem="iuC-IG-gwA" secondAttribute="leading" constant="16" id="QKZ-cb-fla"/>
+                            <constraint firstItem="EQk-ms-h2h" firstAttribute="trailing" secondItem="tc1-54-T0F" secondAttribute="trailing" constant="16" id="WSf-al-B6y"/>
+                            <constraint firstItem="4Uj-y8-iNK" firstAttribute="top" secondItem="EQk-ms-h2h" secondAttribute="top" constant="24" id="aoJ-uU-WST"/>
+                            <constraint firstItem="EQk-ms-h2h" firstAttribute="bottom" secondItem="sWG-YP-YMe" secondAttribute="bottom" constant="24" id="bok-44-dqC"/>
+                            <constraint firstItem="tc1-54-T0F" firstAttribute="top" secondItem="EXR-QA-qPM" secondAttribute="bottom" constant="16" id="fb7-uE-HOC"/>
+                            <constraint firstItem="tc1-54-T0F" firstAttribute="leading" secondItem="EQk-ms-h2h" secondAttribute="leading" constant="16" id="sOJ-3H-GbF"/>
+                            <constraint firstItem="EQk-ms-h2h" firstAttribute="trailing" secondItem="EXR-QA-qPM" secondAttribute="trailing" constant="16" id="uRS-Fe-qJc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EQk-ms-h2h"/>
+                    </view>
+                    <connections>
+                        <outlet property="exercisePassedBtn" destination="sWG-YP-YMe" id="1OK-8O-QiR"/>
+                        <outlet property="relayContentLbl" destination="EXR-QA-qPM" id="Pu5-ZP-bxU"/>
+                        <outlet property="textField" destination="tc1-54-T0F" id="38l-mM-lo7"/>
+                        <outlet property="topLabel" destination="4Uj-y8-iNK" id="vB7-RO-KdR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nxj-IU-Y3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="7"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fBY-io-usv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exercise2 PageVC-->
+        <scene sceneID="pZ7-NG-fZh">
+            <objects>
+                <viewController id="fBY-io-usv" customClass="Exercise2PageVC" customModule="LabCamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kSh-gD-UhT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfN-ne-Sdz">
+                                <rect key="frame" x="16" y="44" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="kZL-1r-ytm">
+                                <rect key="frame" x="16" y="244.5" width="343" height="198"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eR-YP-5ev">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Kbs-uD-WfA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert a number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZKa-RP-4qB">
+                                        <rect key="frame" x="0.0" y="56" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="fBY-io-usv" id="OQL-v6-n9H"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert a number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JEB-bo-yId">
+                                        <rect key="frame" x="0.0" y="112" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="fBY-io-usv" id="JyG-sN-Bpk"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert a number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xkc-xm-Uyd">
+                                        <rect key="frame" x="0.0" y="168" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="fBY-io-usv" id="pH3-nQ-k3K"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlM-xf-Xji">
+                                <rect key="frame" x="16" y="599" width="343" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="XYF-oT-9Z4"/>
+                                </constraints>
+                                <state key="normal" title="Push me to pass!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V32-TJ-Rjl" firstAttribute="trailing" secondItem="QlM-xf-Xji" secondAttribute="trailing" constant="16" id="5Tp-Td-FM6"/>
+                            <constraint firstItem="V32-TJ-Rjl" firstAttribute="trailing" secondItem="kZL-1r-ytm" secondAttribute="trailing" constant="16" id="LWy-0n-Aob"/>
+                            <constraint firstItem="kZL-1r-ytm" firstAttribute="centerY" secondItem="V32-TJ-Rjl" secondAttribute="centerY" id="YJE-8r-7I2"/>
+                            <constraint firstItem="V32-TJ-Rjl" firstAttribute="trailing" secondItem="XfN-ne-Sdz" secondAttribute="trailing" constant="16" id="de4-mG-734"/>
+                            <constraint firstItem="XfN-ne-Sdz" firstAttribute="leading" secondItem="kSh-gD-UhT" secondAttribute="leading" constant="16" id="hHD-q1-liL"/>
+                            <constraint firstItem="V32-TJ-Rjl" firstAttribute="bottom" secondItem="QlM-xf-Xji" secondAttribute="bottom" constant="24" id="jAg-Og-OhE"/>
+                            <constraint firstItem="QlM-xf-Xji" firstAttribute="leading" secondItem="kSh-gD-UhT" secondAttribute="leading" constant="16" id="lrm-gf-ecS"/>
+                            <constraint firstItem="XfN-ne-Sdz" firstAttribute="top" secondItem="V32-TJ-Rjl" secondAttribute="top" constant="24" id="uyT-CA-ezv"/>
+                            <constraint firstItem="kZL-1r-ytm" firstAttribute="leading" secondItem="kSh-gD-UhT" secondAttribute="leading" constant="16" id="yAW-Ps-EgU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V32-TJ-Rjl"/>
+                    </view>
+                    <connections>
+                        <outlet property="exercisePassedBtn" destination="QlM-xf-Xji" id="hzf-s2-USt"/>
+                        <outlet property="number1TextField" destination="ZKa-RP-4qB" id="P5c-BB-LRK"/>
+                        <outlet property="number2TextField" destination="Xkc-xm-Uyd" id="cth-Hk-ifM"/>
+                        <outlet property="number3TextField" destination="JEB-bo-yId" id="fpH-Pe-AQE"/>
+                        <outlet property="resultLbl" destination="7eR-YP-5ev" id="Dih-tQ-Dy8"/>
+                        <outlet property="topLabel" destination="XfN-ne-Sdz" id="bku-Xt-JJm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjv-qm-EfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="7"/>
+        </scene>
+    </scenes>
+</document>
