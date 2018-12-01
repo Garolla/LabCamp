@@ -1,4 +1,6 @@
 # LabCamp
 This repository contains the code for the RxSwift labcamp
 
-The initial project of this LabCamp starts from the final version of a real time chat app that has been implemented in a tutorial from RayWanderlich website (which you can find for reference at this link https://www.raywenderlich.com/5359-firebase-tutorial-real-time-chat)
+The LabCamp is structered in exercise about reactive programming. Starting from InitialPageVC is possible to access the exercise view controllers. 
+The InitialPageVC is a bit complex on purpose, it's better to understand its code before starting the write code. 
+Every view controller contains an exercise. You can complete them in any order.
