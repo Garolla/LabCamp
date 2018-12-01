@@ -28,7 +28,7 @@ class Exercise0PageVC: MasterExerciseVC {
         textField.rx.text.orEmpty
             .subscribe(onNext: { [weak self] text in
                 //TODO: Start of your playground.
-                // The beahvior relay needs to ACCEPT the TEXT of the textField
+                // The behavior relay needs to ACCEPT the TEXT of the textField
                 // In this way observers that are binded to the relay are called
                 // You should be able to pass this exercise by adding 1 line of code
                 

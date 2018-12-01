@@ -10,6 +10,8 @@ import UIKit
 
 class Exercise4PageVC: MasterExerciseVC {
 
+    @IBOutlet weak var topLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
