@@ -19,7 +19,7 @@ class Exercise4PageVC: MasterExerciseVC {
     
     private let cellIdentifier = "Exercise4Cell"
     
-    private let names = ["Abruzzo", "Valle d'aosta", "Puglia" ,"Basilicata", "Calabria", "Campagna", "Emilia romagna", "Friuli venezia giulia", "Lazio", "Liguria", "Lombardia", "Marche", "Molise", "Piemonte", "Sardegna", "Sicilia", "Trentino alto adige", "Toscana", "Umbria", "Veneto"]
+    private let regions = ["Abruzzo", "Valle d'aosta", "Puglia" ,"Basilicata", "Calabria", "Campagna", "Emilia romagna", "Friuli venezia giulia", "Lazio", "Liguria", "Lombardia", "Marche", "Molise", "Piemonte", "Sardegna", "Sicilia", "Trentino alto adige", "Toscana", "Umbria", "Veneto"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +27,8 @@ class Exercise4PageVC: MasterExerciseVC {
         topLabel.text = "Type in the search bar the name of one of the regions of Italy and it should appear in the table view below"
         
         // TODO: Start of your playground.
-        // The goal is to populate the table view, whit only the data
-        // Observe the searchBar text. Starting from its text filter the array "names" with the elements that CONTAINS that text
+        // The goal is to populate the table view, whit a subset of data from "regions"
+        // Observe the searchBar text. Starting from its text filter the array "regions" with the elements that CONTAINS that text
         // Then bind this new array of string to the table view items
         // You should be able to solve this task in around 12 lines of code
         
