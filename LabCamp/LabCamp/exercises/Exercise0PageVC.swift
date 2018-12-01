@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Exercise0PageVC.swift
 //  LabCamp
 //
 //  Created by Emanuele Garolla on 01/12/2018.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Exercise0PageVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+//        CoreLogic.shared.setExercisePassed(exerciseNumber: 0)
     }
 
-
 }
-
