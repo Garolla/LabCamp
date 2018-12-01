@@ -20,7 +20,8 @@ class Exercise1PageVC: MasterExerciseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //TODO: Start of your playground. You should be able to pass this exercise by modifying 1 line of code
+        // TODO: Start of your playground.
+        // You should be able to pass this exercise by modifying 1 line of code
         Observable.just([50, 126, 72, 432, 1 ])
             .bind(to: pickerView.rx.itemTitles) { _, item in
                 return "\(item)"
