@@ -30,7 +30,7 @@ class InitialPageVC: UIViewController {
         self.tableView.tableFooterView = UIView()
         
         //First observable. It will be emitted "just" one event, which is an array of Strings
-        let exercisesNames : Observable<[String]> = Observable.just(["Exercise 0", "Exercise 1", "Exercise 2", "Exercise 3", "Exercise 4", "Exercise 5"])
+        let exercisesNames : Observable<[String]> = Observable.just(["Exercise 0", "Exercise 1", "Exercise 2", "Exercise 3", "Exercise 4"])
         
         //Second observable. Every time viewWillAppear function of this view controller is called, an event will be emitted
         //The event is then transformed to an array of bool, which is taken from the CoreLogic. Every bool represent if an exercise has been passed or not
