@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Exercise2PageVC: UIViewController {
+class Exercise2PageVC: MasterExerciseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

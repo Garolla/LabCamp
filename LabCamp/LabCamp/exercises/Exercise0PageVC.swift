@@ -8,12 +8,15 @@
 
 import UIKit
 
-class Exercise0PageVC: UIViewController {
+class Exercise0PageVC: MasterExerciseVC {
 
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var relayContentLbl: UILabel!
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        CoreLogic.shared.setExercisePassed(exerciseNumber: 0)
+ 
     }
 
 }
