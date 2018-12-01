@@ -50,7 +50,7 @@ class InitialPageVC: UIViewController {
                 let content = CellContent(title: names[i],
                                           background: passed[i] ? .green : .red)
                 cellContents.append(content)
-            }
+            } 
             
             return cellContents
         }
@@ -77,6 +77,7 @@ class InitialPageVC: UIViewController {
                 return "Exercise\(indexPath.row)Page"
             }.subscribe(onNext: { [weak self] nextExerciseToPush in
                 
+                print("InitialPageVC: Selected " + nextExerciseToPush)
                 let storyboard = UIStoryboard(name: nextExerciseToPush, bundle: nil)
                 let vc = storyboard.instantiateInitialViewController()!
                 
@@ -85,8 +86,7 @@ class InitialPageVC: UIViewController {
             }).disposed(by: disposeBag)
         
         
-        // The observable exercisesPassed is also used to change the content of the top label
-        
+        // The observable exercisesPassed is also used to change the content of the top label 
         exercisesPassed
             .map{"You have completed \($0.filter{$0 == true}.count) exercise"}
             .bind(to: topLabel.rx.text)

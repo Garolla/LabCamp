@@ -16,3 +16,16 @@ public extension Reactive where Base: UIViewController {
         return ControlEvent(events: source)
     }
 }
+
+extension UIButton {
+    open override var isEnabled: Bool {
+        get{
+            return super.isEnabled
+        }
+        
+        set{
+            super.isEnabled = newValue
+            self.alpha = newValue ? 1 : 0.3
+        }
+    }
+}

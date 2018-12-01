@@ -13,7 +13,7 @@ class Exercise0PageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        CoreLogic.shared.setExercisePassed(exerciseNumber: 0)
+        CoreLogic.shared.setExercisePassed(exerciseNumber: 0)
     }
 
 }
