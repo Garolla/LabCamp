@@ -27,7 +27,7 @@ class Exercise3PageVC: MasterExerciseVC {
         // TODO: Start of your playground.
         // The goal is to realize username and password validation
         // You need to observe the text of the usernameTextField and map it to a bool value (true if it username is longer than minimalUsernameLength)
-        // You need to observe the text of the passwordTextField and map it to a bool value (true if it èassword is longer than minimalPasswordLength)
+        // You need to observe the text of the passwordTextField and map it to a bool value (true if it password is longer than minimalPasswordLength)
         // Then you should modify everythingValid, combining the previous two observable streams. When the first AND the second are both true, then everything should emit true
         // You should be able to solve this task in 5 - 8 lines of code
         

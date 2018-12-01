@@ -71,7 +71,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="XYF-oT-9Z4"/>
                                 </constraints>
-                                <state key="normal" title="Trial passed!">
+                                <state key="normal" title="Push me to pass!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>

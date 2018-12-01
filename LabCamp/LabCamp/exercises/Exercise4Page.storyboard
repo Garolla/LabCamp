@@ -18,29 +18,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDQ-eg-Tat">
-                                <rect key="frame" x="-19" y="156" width="343" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDQ-eg-Tat">
+                                <rect key="frame" x="16" y="44" width="343" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sy4-g7-V7H">
-                                <rect key="frame" x="32" y="492" width="343" height="44"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="F0M-OL-x7O">
+                                <rect key="frame" x="0.0" y="84" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jen-oq-58g">
+                                <rect key="frame" x="16" y="156" width="343" height="427"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Exercise4Cell" id="lbR-lQ-ikh">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lbR-lQ-ikh" id="ud4-nX-or4">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sy4-g7-V7H">
+                                <rect key="frame" x="16" y="599" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="leK-sK-pv4"/>
                                 </constraints>
-                                <state key="normal" title="Trial passed!">
+                                <state key="normal" title="Push me to pass!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6af-QK-ZQR" firstAttribute="trailing" secondItem="jen-oq-58g" secondAttribute="trailing" constant="16" id="A9J-NJ-wLL"/>
+                            <constraint firstItem="F0M-OL-x7O" firstAttribute="leading" secondItem="6af-QK-ZQR" secondAttribute="leading" id="Al9-5o-wbb"/>
+                            <constraint firstItem="eDQ-eg-Tat" firstAttribute="top" secondItem="6af-QK-ZQR" secondAttribute="top" constant="24" id="Awe-xL-6T3"/>
+                            <constraint firstItem="6af-QK-ZQR" firstAttribute="bottom" secondItem="Sy4-g7-V7H" secondAttribute="bottom" constant="24" id="GTA-YR-BRl"/>
+                            <constraint firstItem="Sy4-g7-V7H" firstAttribute="top" secondItem="jen-oq-58g" secondAttribute="bottom" constant="16" id="JnD-2r-T5i"/>
+                            <constraint firstItem="jen-oq-58g" firstAttribute="top" secondItem="F0M-OL-x7O" secondAttribute="bottom" constant="16" id="KfF-fv-fxh"/>
+                            <constraint firstItem="6af-QK-ZQR" firstAttribute="trailing" secondItem="Sy4-g7-V7H" secondAttribute="trailing" constant="16" id="WJb-P9-70H"/>
+                            <constraint firstItem="F0M-OL-x7O" firstAttribute="trailing" secondItem="6af-QK-ZQR" secondAttribute="trailing" id="a1b-Or-GGh"/>
+                            <constraint firstItem="F0M-OL-x7O" firstAttribute="top" secondItem="eDQ-eg-Tat" secondAttribute="bottom" constant="16" id="aBd-Eu-Zs3"/>
+                            <constraint firstItem="Sy4-g7-V7H" firstAttribute="leading" secondItem="6af-QK-ZQR" secondAttribute="leading" constant="16" id="bpi-m9-Sf3"/>
+                            <constraint firstItem="6af-QK-ZQR" firstAttribute="trailing" secondItem="eDQ-eg-Tat" secondAttribute="trailing" constant="16" id="dfH-G8-SFv"/>
+                            <constraint firstItem="eDQ-eg-Tat" firstAttribute="leading" secondItem="0Wu-0B-GcP" secondAttribute="leading" constant="16" id="mxe-ox-weA"/>
+                            <constraint firstItem="jen-oq-58g" firstAttribute="leading" secondItem="6af-QK-ZQR" secondAttribute="leading" constant="16" id="wrO-aj-fIe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6af-QK-ZQR"/>
                     </view>
                     <connections>
                         <outlet property="exercisePassedBtn" destination="Sy4-g7-V7H" id="ILJ-KY-rgH"/>
+                        <outlet property="searchBar" destination="F0M-OL-x7O" id="hBR-hW-jLg"/>
+                        <outlet property="tableView" destination="jen-oq-58g" id="XCW-k0-amQ"/>
                         <outlet property="topLabel" destination="eDQ-eg-Tat" id="BdR-lU-1qE"/>
                     </connections>
                 </viewController>
