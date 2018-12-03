@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fBY-io-usv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fBY-io-usv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="kZL-1r-ytm">
-                                <rect key="frame" x="16" y="244.5" width="343" height="198"/>
+                                <rect key="frame" x="16" y="92" width="343" height="198"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eR-YP-5ev">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -80,7 +80,7 @@
                         <constraints>
                             <constraint firstItem="V32-TJ-Rjl" firstAttribute="trailing" secondItem="QlM-xf-Xji" secondAttribute="trailing" constant="16" id="5Tp-Td-FM6"/>
                             <constraint firstItem="V32-TJ-Rjl" firstAttribute="trailing" secondItem="kZL-1r-ytm" secondAttribute="trailing" constant="16" id="LWy-0n-Aob"/>
-                            <constraint firstItem="kZL-1r-ytm" firstAttribute="centerY" secondItem="V32-TJ-Rjl" secondAttribute="centerY" id="YJE-8r-7I2"/>
+                            <constraint firstItem="kZL-1r-ytm" firstAttribute="top" secondItem="XfN-ne-Sdz" secondAttribute="bottom" constant="24" id="WWR-YL-XPR"/>
                             <constraint firstItem="V32-TJ-Rjl" firstAttribute="trailing" secondItem="XfN-ne-Sdz" secondAttribute="trailing" constant="16" id="de4-mG-734"/>
                             <constraint firstItem="XfN-ne-Sdz" firstAttribute="leading" secondItem="kSh-gD-UhT" secondAttribute="leading" constant="16" id="hHD-q1-liL"/>
                             <constraint firstItem="V32-TJ-Rjl" firstAttribute="bottom" secondItem="QlM-xf-Xji" secondAttribute="bottom" constant="24" id="jAg-Og-OhE"/>
